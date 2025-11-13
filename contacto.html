@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto | Futuro Atleta</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase" href="index.html"><i
+                    class="bi bi-trophy-fill text-warning"></i> Futuro Atleta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu4">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu4">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="programas.html">Programas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="margin-top:70px;">
+        <header class="py-4">
+            <h1 class="fw-bold">Contáctanos</h1>
+            <p class="text-muted">¿Tienes preguntas? Escríbenos y te responderemos pronto.</p>
+        </header>
+
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <form class="needs-validation" novalidate id="contactForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input id="name" name="name" type="text" class="form-control" required>
+                        <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input id="email" name="email" type="email" class="form-control" required>
+                        <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Teléfono (opcional)</label>
+                        <input id="phone" name="phone" type="tel" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                        <div class="invalid-feedback">Escribe tu mensaje.</div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    <div id="formAlert" class="mt-3" style="display:none;"></div>
+                </form>
+            </div>
+
+            <div class="col-lg-6">
+                <h5 class="fw-bold">Nuestra Sede</h5>
+                <p class="text-muted">Estadio Cuscatlán, ubicado en la Autopista Sur Los Próceres en San Salvador, El Salvador</p>
+
+                <img src="assets/img/vmt.jpg" alt="Mapa" class="img-fluid rounded shadow-sm">
+                <div class="mt-3">
+                    <p class="mb-1"><strong>Teléfono:</strong> +503 7680-7640</p>
+                    <p class="mb-0"><strong>Correo:</strong> info@futuroatleta.org</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="m-0">Fundación Futuro Atleta • Haciendo realidad sueños deportivos</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
